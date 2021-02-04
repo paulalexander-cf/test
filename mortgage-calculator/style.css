@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+#mortgageCalculator {
+    display: block;
+    margin: 0 auto;
+    max-width: 320px;
+    min-height: 353px;
+}
+
+#mortgageCalculator h3 {
+    text-align: center;
+    height: 18px;
+    margin: 10px auto;
+    font-family: HelveticaNeue;
+    /* font-size: 30px; */
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    color: #033652;
+}
+
+#mortgageCalculator h2.paymentAmount {
+    height: 48px;
+    margin: 0 0 30px 0;
+    font-family: HelveticaNeue;
+    font-size: 40px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: normal;
+    text-align: center;
+    color: #00b2a4;
+}
+
+#mortgageCalculator input[type='range'] {
+    display: block;
+    width: 100%;
+}
+
+#mortgageCalculator .sliderLabel {
+    display: flex;
+    justify-content: space-between;
+}
+
+#mortgageCalculator .sliderLabel label {
+    height: 19px;
+    margin: 10px 0;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.19;
+    letter-spacing: normal;
+    text-align: left;
+    color: #033652;
+}
+
+#mortgageCalculator .rangeValue {
+    height: 19px;
+    margin: 10px 0;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.19;
+    letter-spacing: normal;
+    text-align: right;
+    color: #00b2a4;
+    align-self: flex-end;
+}
+
+#mortgageCalculator .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    margin-bottom: 15px;
+    background:#eaebef;
+    background: linear-gradient(to right, #00b2a4 0%, #00b2a4 50%, #eaebef 50%, #eaebef 100%);
+    outline: none;
+    border-radius: 30px;
+}
+
+#mortgageCalculator .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+}
+/* .slider::-webkit-slider-runnable-track {
+    background: #fff;
+} */
+#mortgageCalculator .slider::-moz-range-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -moz-border-radius: 30px;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    background: #fff;
+    border: none;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+
+#mortgageCalculator .slider::-moz-range-progress {
+    background-color: #00b2a4;
+    height: 10px;
+    border-radius: 30px;
+}
+#mortgageCalculator .slider::-moz-range-track {  
+    background-color: #eaebef;
+}
+
+/* @media only screen and (max-width: 375px) {
+    #mortgageCalculator h3 {
+        font-size: 24px;
+    }
+} */

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mortgage Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <div class="mortgageCalculator" id="mortgageCalculator">
+        <h3>Monthly payment</h3>
+        <h2 class="paymentAmount">${{ calculatedPayment }} mo.</h2>
+        <calculator-slider v-for="slider in sliders" v-bind:key="slider.label" v-bind:slider="slider">
+            <span slot-scope="props" class="right rangeValue">{{ getSliderFormat(props.slider) }}</span>
+        </calculator-slider>
+      </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
